@@ -2,28 +2,59 @@
 
 ## Project Overview
 
-This project perform Exploratory Data Analysis (EDA) on an e-commerce dataset to understand customer purchasing behavior, revenue distribution, and order patterns.
-The goal is to extract actionable business insights that can support data-driven decision making.
+This project analyzes customer purchasing behavior in an e-commerce dataset to identify revenue patterns, customers concentration, and retention issues. The analysis focuses on understanding how revenue is distributed across customers and orders, and how business decisions can be informed through data-driven insights.
 
 ## Dataset
 
-Brazilian E-Commerce Public Dataset by Olist
+- **Source**: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- **Scope**: Orders, customers, and payment transactions
+- **Key Fields**:
 
-Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+    - customers_unique_id
+    - order_id
+    - order_purchase_timestamp
+    - payment_value
 
-## Objectives
-- Analyze customer purchasing frequency
-- Identify revenue distribution and high-value outliers
-- Understand customer contribution to total revenue
-- Generate business recommendations based on findings
+## Key Business Questions
 
-## Tools & Technologies
+- How is revenue distributed across customers?
+- Do a small number of customers contribute disproportionately to revenue?
+- What does order value distribution look like?
+- How strong is customer retention?
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib / Seaborn
-- Google Colab
+## Key Analysis & Visualizations
+
+### Order Value Distribution
+This charts shows that order values are heavily right-skewed with significant high-value outliers.
+![Order Value Distribution](images/order_value_distribution.png)
+
+### Top Customers by Revenue
+A small group of customers contributes disproportionately to total revenue.
+![Top Customers Revenue](images/top_customers_revenue.png)
+
+### Revenue Concentration (Pareto Analysis)
+The top percentage of customers contributes the majority of total revenue.
+![Revenue Pareto](images/pareto_revenue.png)
+
+## Key Insights
+
+- Revenue is highly concentrated among a small group of customers.
+- Approximately 10-20% of customers generate the majority of total revenue.
+- Monitor high-value transactions for fraud detection or potential enterprise opportunities.
+- Segment customers based on spending behavior for targeted marketing strategies.
+
+## Business Recommendations
+
+- Introduce loyalty or retention programs to convert one-time buyers into repeat customers.
+- Reduce revenue concentration risk by targeting mid-value customers with personalized offers.
+- Monitor high-value transactions for fraud detection or potential enterprise opportunities.
+- Segment customers based on spending behavior for targeted marketing strategies.
+
+## Tech Stack
+
+- **Python**: pandas, numpy, matplotlib, seaborn
+- **Jupyter Notebook**
+- **GitHub** for version control and documentation
 
 ## How to Run
 1. Clone this repository:
@@ -40,32 +71,3 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
-
-## Key Analysis
-
-- Data cleaning and preprocessing
-- Order value distribution analysis
-- Customer purchase frequency analysis
-- Identification of top revenue-contributing customers
-- Detection of skewness and outliers in transaction values
-
-## Key Insights
-
-### Order Value Distribution
-This charts shows that order values are heavily right-skewed with significant high-value outliers.
-![Order Value Distribution](images/order_value_distribution.png)
-
-### Top Customers by Revenue
-A small group of customers contributes disproportionately to total revenue.
-![Top Customers Revenue](images/top_customers_revenue.png)
-
-### Revenue Concentration (Pareto Analysis)
-The top percentage of customers contributes the majority of total revenue.
-![Revenue Pareto](images/pareto_revenue.png)
-
-## Business Recommendations
-
-- Implement loyalty programs to retain high-value customers
-- Design targeted campaigns to convert one-time buyers into repeat customers
-- Reduce revenue concentration risk by nurturing mid-value customer segments
-- Monitor high-value transactions for potential enterprise opportunities or fraud risk
