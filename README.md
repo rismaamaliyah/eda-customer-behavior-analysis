@@ -70,3 +70,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
+
+## Dashboard
+
+[Interactive Dashboard](https://public.tableau.com/views/E-CommerceSalesPerformanceCustomerBehaviorDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
