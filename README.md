@@ -9,7 +9,6 @@ This project analyzes customer purchasing behavior in an e-commerce dataset to i
 - **Source**: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 - **Scope**: Orders, customers, and payment transactions
 - **Key Fields**:
-
     - customers_unique_id
     - order_id
     - order_purchase_timestamp
